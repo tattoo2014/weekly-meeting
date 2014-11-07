@@ -4,7 +4,7 @@ git是分布式的版本控制系统，和svn的概念同级。
 
 GitHub (https://github.com)  是一个面向开源及私有软件项目的托管平台，因为只支持Git作为唯一的版本库格式进行托管，故名GitHub。
 
-> 
+> http://www.imooc.com/learn/208
 
 ###1. 注册github账号
 
@@ -38,11 +38,11 @@ GitHub (https://github.com)  是一个面向开源及私有软件项目的托管
 
 ####3.1. 打开Git Bash
 
-
+![打开git Bash](https://raw.githubusercontent.com/AsiaFE/weekly-meeting/master/%E8%B5%84%E6%BA%90%E5%BA%93/20141106/01.png)
 
 ####3.2. 运行命令cd ~/.ssh 检查自己的电脑上是否存在ssh keys
 
-
+![](https://raw.githubusercontent.com/AsiaFE/weekly-meeting/master/%E8%B5%84%E6%BA%90%E5%BA%93/20141106/02.png)
 
 如果显示No such file or directory 则需要去创建一个新的ssh keys
 
@@ -50,11 +50,11 @@ GitHub (https://github.com)  是一个面向开源及私有软件项目的托管
 
 运行命令：$ ssh-keygen -t rsa -C "your_email@youremail.com"  回车
 
-
+![](https://raw.githubusercontent.com/AsiaFE/weekly-meeting/master/%E8%B5%84%E6%BA%90%E5%BA%93/20141106/03.png)
 
 输入密码并重新确认
 
-
+![](https://raw.githubusercontent.com/AsiaFE/weekly-meeting/master/%E8%B5%84%E6%BA%90%E5%BA%93/20141106/04.png)
 
  > 注：在Enter passphrase的时候，输入的密码是看不到的，其实已经输入，完成后点击回车就行了。
 
@@ -64,7 +64,7 @@ GitHub (https://github.com)  是一个面向开源及私有软件项目的托管
 
 Account Settings > SSh keys > Add ssh
 
-
+![](https://raw.githubusercontent.com/AsiaFE/weekly-meeting/master/%E8%B5%84%E6%BA%90%E5%BA%93/20141106/05.png)
 
 在本机找到你创建的密钥文件id_rsa.pub,使用记事本打开，复制所有的内容，粘贴到key文本框中，点击Add Key保存
 
@@ -72,13 +72,15 @@ Account Settings > SSh keys > Add ssh
 
 输入命令：$ ssh -T git@github.com
 
-
+![](https://raw.githubusercontent.com/AsiaFE/weekly-meeting/master/%E8%B5%84%E6%BA%90%E5%BA%93/20141106/06.png)
 
 输入yes
 
-
+![](https://raw.githubusercontent.com/AsiaFE/weekly-meeting/master/%E8%B5%84%E6%BA%90%E5%BA%93/20141106/07.png)
 
 本机显示连接关闭，继续执行 $ ssh -T git@github.com ，提示输入密码，输入密码。回车登陆成功。
+
+> 如果SSH还是无法使计算机和github建立连接则可以参照如下文章
 
 ###6 在本地设置Git信息
 
@@ -94,13 +96,13 @@ $ git config --global user.email  "your_email@youremail.com"
 
 ####7.1 点击New repository
 
- 
+ ![](https://raw.githubusercontent.com/AsiaFE/weekly-meeting/master/%E8%B5%84%E6%BA%90%E5%BA%93/20141106/08.png)
 
 **github clone文件**
 
 git clone git://git.kernel.org/pub/scm/git/git.git
 
- 
+ ![](https://raw.githubusercontent.com/AsiaFE/weekly-meeting/master/%E8%B5%84%E6%BA%90%E5%BA%93/20141106/09.png)
 
 **github 删除文件**
 
