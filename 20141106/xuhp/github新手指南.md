@@ -80,7 +80,7 @@ Account Settings > SSh keys > Add ssh
 
 本机显示连接关闭，继续执行 $ ssh -T git@github.com ，提示输入密码，输入密码。回车登陆成功。
 
-> 如果SSH还是无法使计算机和github建立连接则可以参照如下文章
+> 如果SSH还是无法使计算机和github建立连接则可以参照如下文章 http://computer.uoh.edu.cn/android/526.html
 
 ###6 在本地设置Git信息
 
